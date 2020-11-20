@@ -1,17 +1,14 @@
 from stack import Stack
+import unittest
 
 
-def stack_test():
-    """This is testing the stack.py module that is implementing a stack data
-    structure as a List"""
-    news_paper_stack = Stack()
-    news_paper_stack.push("Daily Sun")
-    news_paper_stack.push("Daily Tribune")
-    news_paper_stack.print()
-    news_paper_stack.pop()
-    news_paper_stack.print()
-    news_paper_stack.push("Daily Planet")
-    news_paper_stack.print()
+class StackTest(unittest.TestCase):
+
+    def test_push_to_stack(self):
+        stack = Stack()
+        item = "Daily Sun"
+        stack.push(item)
+        self.assertIn(item, stack)
 
 
-stack_test()
+unittest.main()
