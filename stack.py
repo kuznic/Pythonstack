@@ -1,8 +1,7 @@
-class Stack(list):
+class Stack:
     """ This class implements a Stack data structure using a python list"""
 
     def __init__(self):
-        super().__init__()
         self.stack_list = []
 
     def push(self, item):
