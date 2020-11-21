@@ -2,7 +2,7 @@ class Stack:
     """ This class implements a pyStack data structure using a python list"""
 
     def __init__(self):
-        self._stack_list = [] #private attribute
+        self._stack_list = []  # private attribute
 
     def push(self, item):
         """ Adds item to the stack"""
